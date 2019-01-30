@@ -1,0 +1,2318 @@
+body {
+	max-width: 100%;
+	margin-top: -10px;
+	overflow-x: hidden;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+.top {
+	width: 100%;
+	height: 80px;
+	background-color: #20476a;
+	margin-left: -10px;
+	opacity: 0.9;
+	position: relative;
+	z-index: 999;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.header-container {
+	width: 50%;
+	height: 80px;
+	align-self: center;
+}
+
+.header-container img {
+	height: 50px;
+	position: relative;
+	top: 20px;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+nav ul {
+	list-style: none;
+	position: relative;
+	top: -30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+nav li {
+	color: #287fd4;
+	font-size: 13px;
+	padding-left: 10px;
+	font-family: Roboto;
+}
+
+nav li a {
+	text-decoration: none;
+	color: #287fd4;
+}
+
+nav ul:nth-child(1) {
+	color: white;
+}
+
+nav li a:hover {
+	color: white;
+}
+
+nav li:nth-of-type(2):before,
+nav li:nth-of-type(3):before,
+nav li:nth-of-type(4):before,
+nav li:nth-of-type(5):before,
+nav li:nth-of-type(6):before,
+nav li:nth-of-type(7):before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	border: 1px solid #277ed2;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+}
+
+.c-hamburger {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	font-size: 0;
+	text-indent: -9999px;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	border: none;
+	cursor: pointer;
+	transition: background 0.3s;
+	background: transparent;
+	display: none;
+}
+
+.c-hamburger:focus {
+	outline: none;
+}
+
+.c-hamburger span {
+	display: block;
+	position: absolute;
+	top: 22px;
+	left: 2px;
+	right: 2px;
+	height: 2px;
+	background: #007fff;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+	position: absolute;
+	display: block;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #007fff;
+	content: "";
+}
+
+.c-hamburger span::before {
+	top: -6px;
+}
+
+.c-hamburger span::after {
+	bottom: -6px;
+}
+
+.c-hamburger span:hover,
+.c-hamburger span:before:hover,
+.c-hamburger span:after:hover {
+	background-color: white;
+}
+
+.block-1 {
+	width: 100%;
+	height: 850px;
+	z-index: 99999;
+	position: relative;
+	left: 0;
+	top: 0;
+	margin-left: -10px;
+	display: flex;
+	flex-direction: column;
+	background-image: url(images/Foto.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 50% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.first-text-block h1 {
+	font-weight: bolder;
+	color: white;
+	position: relative;
+	font-size: 58px;
+	font-family: "Roboto";
+	padding-left: 30px;
+	top: -36px;
+	left: 2px;
+	opacity: 1;
+}
+
+.first-text-block p {
+	color: white;
+	position: relative;
+	font-size: 42px;
+	font-family: "Roboto";
+	padding-left: 30px;
+	top: -82px;
+	left: 2px;
+}
+
+.first-text-block {
+	width: 50%;
+	height: 185px;
+	align-self: center;
+	background-color: rgba(34, 142, 246, 0.7);
+	position: relative;
+	top: 230px;
+}
+
+.pulse {
+	width: 88%;
+	height: 400px;
+	position: relative;
+	left: -195px;
+	top: 100px;
+}
+
+.pulse img {
+	height: 400px;
+	width: 100%;
+}
+
+.circle1 a {
+	width: 78px;
+	height: 78px;
+	border: 2px solid #56697a;
+	border-radius: 50px;
+	position: absolute;
+	top: 740px;
+	left: 696px;
+	z-index: 99999;
+}
+
+.circle1 a::before {
+	content: "";
+	width: 28px;
+	height: 28px;
+	border: 2px solid #56697a;
+	position: absolute;
+	top: 16px;
+	left: 23px;
+	border-top: 0;
+	border-right: 0;
+	transform: rotate(-45deg);
+}
+
+.circle1 a:hover,
+.circle1 a:hover::before {
+	border-color: white;
+}
+
+.block-2 {
+	width: 100%;
+	height: 1330px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	position: relative;
+	top: 0px;
+	left: -10px;
+}
+
+h2 {
+	align-self: center;
+	font-size: 48px;
+	font-family: "Roboto";
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-top: 25px;
+}
+
+.block-2 img {
+	align-self: center;
+	margin-top: -60px;
+	margin-left: -10px;
+	height: 20px;
+}
+
+.block-2 hr:nth-of-type(1) {
+	width: 110px;
+	height: 1px;
+	border: none;
+	background-color: #dcdcdc;
+	position: relative;
+	top: -44px;
+	left: 70px;
+}
+
+.block-2 hr:nth-of-type(2) {
+	width: 110px;
+	height: 1px;
+	border: none;
+	background-color: #dcdcdc;
+	position: relative;
+	top: -16px;
+	left: -80px;
+}
+
+.second-text-block {
+	width: 50%;
+	height: 190px;
+	background-color: #3e9eff;
+	align-self: center;
+	margin-top: 20px;
+	margin-bottom: 60px;
+}
+
+.second-text-block p {
+	font-size: 22px;
+	font-family: "Roboto";
+	font-weight: normal;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+}
+
+.second-text-block hr:nth-of-type(1) {
+	background-color: white;
+	border: none;
+	width: 690px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.tablets {
+	height: 200px;
+	width: 50%;
+	margin-top: 20px;
+	align-self: center;
+	display: inline-flex;
+	justify-content: center;
+}
+
+.tablets img {
+	height: 170px;
+	width: 56%;
+	margin-left: 5px;
+	margin-top: 35px;
+}
+
+.tablets p {
+	width: 300px;
+	height: 100%;
+	margin-left: 36px;
+	margin-top: 35px;
+	font-size: 24px;
+	font-family: "Roboto";
+	font-weight: 300;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+
+.hidden {
+	display: none;
+}
+
+.block-2 hr:nth-of-type(3) {
+	width: 50%;
+	height: 1px;
+	border: none;
+	background-color: #dcdcdc;
+	margin-top: 50px;
+}
+
+.pazzles {
+	height: 270px;
+	width: 50%;
+	margin-top: 20px;
+	align-self: center;
+	display: inline-flex;
+	justify-content: center;
+	margin-top: 60px;
+	padding-top: 30px;
+}
+
+.pazzles p {
+	width: 300px;
+	height: 100%;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-size: 24px;
+	font-family: "Roboto";
+	font-weight: 300;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+
+.pazzles img {
+	height: 280px;
+	width: 40%;
+	margin-left: 40px;
+	margin-top: -90px;
+}
+
+.block-2 hr:nth-of-type(4) {
+	width: 50%;
+	height: 1px;
+	border: none;
+	background-color: #dcdcdc;
+	margin-top: -20px;
+}
+
+.devices {
+	height: 270px;
+	width: 50%;
+	margin-top: 20px;
+	align-self: center;
+	display: inline-flex;
+	justify-content: center;
+	margin-top: 60px;
+	padding-left: 50px;
+}
+
+.devices img {
+	height: 260px;
+	width: 51%;
+	margin-left: -42px;
+	margin-top: -70px;
+}
+
+.devices p {
+	width: 300px;
+	height: 100%;
+	margin-left: 70px;
+	margin-top: 30px;
+	font-size: 24px;
+	font-family: "Roboto";
+	font-weight: 300;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+
+.block-3 {
+	width: 100%;
+	height: 1070px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	position: relative;
+	top: 0px;
+	left: -10px;
+	background-color: #f6f8fb;
+}
+
+.block-3 img {
+	align-self: center;
+	margin-top: -60px;
+	margin-left: -10px;
+	height: 20px;
+}
+
+.block-3 hr:nth-of-type(1) {
+	width: 110px;
+	height: 1px;
+	border: none;
+	background-color: #dcdcdc;
+	position: relative;
+	top: -44px;
+	left: 70px;
+}
+
+.block-3 hr:nth-of-type(2) {
+	width: 110px;
+	height: 1px;
+	border: none;
+	background-color: #dcdcdc;
+	position: relative;
+	top: -16px;
+	left: -80px;
+}
+
+.third-text-block {
+	width: 50%;
+	height: 150px;
+	background-color: #3e9eff;
+	align-self: center;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	padding-top: 20px;
+}
+
+.third-text-block p {
+	font-size: 23px;
+	font-family: "Roboto";
+	font-weight: normal;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	padding-top: 15px;
+}
+
+.scheme {
+	align-self: center;
+	width: 60%;
+	height: 550px;
+	margin-top: 10px;
+	margin-left: 10px;
+	background-image: url('images/Line.png');
+	background-repeat: no-repeat;
+	background-size: 90%;
+	background-position: 50% 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.romb-1 {
+	width: 170px;
+	height: 170px;
+	transform: rotate(45deg);
+	background-color: #e2e4e7;
+	margin-left: 96px;
+	margin-top: 70px;
+	z-index: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.romb-1:before {
+	content: "";
+	background-image: url('images/Векторный-смарт-объект.png');
+	background-repeat: no-repeat;
+	background-position: 50% 40%;
+	transform: rotate(-45deg);
+	background-size: 40%;
+	width: 150px;
+	height: 150px;
+	z-index: 1;
+	position: absolute;
+}
+
+.romb-2 {
+	width: 170px;
+	height: 170px;
+	transform: rotate(45deg);
+	background-color: #e2e4e7;
+	margin-left: 0;
+	margin-top: 70px;
+	z-index: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.romb-2:before {
+	content: "";
+	background-image: url('images/Векторный-смарт-объект1.png');
+	background-repeat: no-repeat;
+	background-position: 50% 40%;
+	transform: rotate(-45deg);
+	background-size: 40%;
+	width: 150px;
+	height: 150px;
+	z-index: 1;
+	position: absolute;
+}
+
+.romb-3 {
+	width: 170px;
+	height: 170px;
+	transform: rotate(45deg);
+	background-color: #3e9eff;
+	margin-right: 105px;
+	margin-top: 70px;
+	z-index: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.romb-3:before {
+	content: "";
+	background-image: url('images/Векторный-смарт-объект-копія.png');
+	background-repeat: no-repeat;
+	background-position: 50% 40%;
+	transform: rotate(-45deg);
+	background-size: 40%;
+	width: 150px;
+	height: 150px;
+	z-index: 1;
+	position: absolute;
+}
+
+.romb-4 {
+	width: 170px;
+	height: 170px;
+	transform: rotate(45deg);
+	background-color: #e2e4e7;
+	margin-left: 229px;
+	margin-top: -130px;
+	z-index: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.romb-4:before {
+	content: "";
+	background-image: url('images/Векторный-смарт-объект3.png');
+	background-repeat: no-repeat;
+	background-position: 50% 40%;
+	transform: rotate(-45deg);
+	background-size: 40%;
+	width: 150px;
+	height: 150px;
+	z-index: 1;
+	position: absolute;
+}
+
+.romb-5 {
+	width: 170px;
+	height: 170px;
+	transform: rotate(45deg);
+	background-color: #e2e4e7;
+	margin-top: -130px;
+	margin-right: 238px;
+	z-index: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.romb-5:before {
+	content: "";
+	background-image: url('images/Векторный-смарт-объект2.png');
+	background-repeat: no-repeat;
+	background-position: 50% 40%;
+	transform: rotate(-45deg);
+	background-size: 40%;
+	width: 150px;
+	height: 150px;
+	z-index: 1;
+	position: absolute;
+}
+
+.romb-6 {
+	width: 170px;
+	height: 170px;
+	transform: rotate(45deg);
+	background-color: #e2e4e7;
+	margin-left: 360px;
+	margin-top: -130px;
+	z-index: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.romb-6:before {
+	content: "";
+	background-image: url('images/Векторный-смарт-объект4.png');
+	background-repeat: no-repeat;
+	background-position: 50% 40%;
+	transform: rotate(-45deg);
+	background-size: 40%;
+	width: 150px;
+	height: 150px;
+	z-index: 1;
+	position: absolute;
+}
+
+.line-break {
+	width: 100%;
+}
+
+.romb-1:hover,
+.romb-2:hover,
+.romb-3:hover,
+.romb-4:hover,
+.romb-5:hover,
+.romb-6:hover {
+	background-color: #3e9eff;
+}
+
+.romb-1:hover:before,
+.romb-2:hover:before,
+.romb-3:hover:before,
+.romb-4:hover:before,
+.romb-5:hover:before,
+.romb-6:hover:before {
+	transform: scale(1.1) rotate(-45deg);
+}
+
+.romb-1:after,
+.romb-2:after,
+.romb-3:after,
+.romb-4:after,
+.romb-5:after,
+.romb-6:after {
+	content: "LOREM";
+	font-size: ;
+	text-align: center;
+	padding-top: 10px;
+	width: 150px;
+	height: 30px;
+	position: absolute;
+	transform: rotate(-45deg);
+	background-color: white;
+	font-size: 22px;
+	font-family: "Roboto";
+	font-weight: 300;
+	top: 110px;
+	left: 60px;
+}
+
+.mobile-scheme {
+	display: none;
+}
+
+.block-4 {
+	width: 100%;
+	height: 1000px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: flex-start;
+	position: relative;
+	top: 0px;
+	left: -10px;
+	background-color: white;
+}
+
+.block-4 img {
+	align-self: center;
+	margin-top: -60px;
+	margin-left: -10px;
+	height: 20px;
+}
+
+.block-4 hr:nth-of-type(1) {
+	width: 110px;
+	height: 1px;
+	border: none;
+	background-color: #dcdcdc;
+	position: relative;
+	top: -44px;
+	left: 70px;
+}
+
+.block-4 hr:nth-of-type(2) {
+	width: 110px;
+	height: 1px;
+	border: none;
+	background-color: #dcdcdc;
+	position: relative;
+	top: -17px;
+	left: -80px;
+	z-index: 999;
+}
+
+.links {
+	align-self: center;
+	width: 88%;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 40px;
+	margin-top: 45px;
+}
+
+.links p {
+	width: 350px;
+	height: 45px;
+	text-align: center;
+	font-size: 29px;
+	font-family: "Roboto";
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-top: 30px;
+}
+
+.links p:first-child,
+.links p:last-child {
+	font-size: 24px;
+	padding-top: 20px;
+	border: 1px solid black;
+}
+
+.links p:first-child {
+	margin-left: 60px;
+}
+
+.links p:last-child {
+	margin-right: 100px;
+}
+
+.links p:nth-child(2) {
+	margin-left: 0;
+	margin-top: 10px;
+}
+
+.links a {
+	text-decoration: none;
+	color: #3b9dff;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.links .links-hover:hover {
+	background-color: #89c4ff;
+}
+
+.qr {
+	position: absolute;
+	left: -235px;
+	top: 305px;
+	width: 100%;
+	height: 700px;
+	margin-top: -20px;
+	background-image: url('images/BG1.png');
+	background-repeat: no-repeat;
+	background-size: 95%;
+	background-position: 70% 80%;
+}
+
+.qr-images {
+	align-self: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 80%;
+	height: 750px;
+	padding-top: 60px;
+	margin-left: -33px;
+}
+
+.first-block {
+	width: 25%;
+	height: 320px;
+	background-image: url('images/android.png');
+	background-size: 80%;
+	background-repeat: no-repeat;
+	order: 0;
+	margin-top: 60px;
+	position: relative;
+	left: 40px;
+}
+
+.first-block:after {
+	content: "";
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	background-image: url('images/android_logo_520.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	left: 30px;
+	top: 260px;
+}
+
+.second-block {
+	width: 33%;
+	height: 400px;
+	transform: rotate(45deg);
+	overflow: hidden;
+	order: 0;
+	margin-left: -10px;
+}
+
+.second-block:before {
+	content: "";
+	position: absolute;
+	background-image: url('images/Слой-120.png');
+	background-repeat: no-repeat;
+	background-size: 101%;
+	background-position: 50% 35%;
+	width: 800px;
+	height: 1000px;
+	transform: rotate(-45deg);
+	z-index: 1;
+	margin-top: -310px;
+	margin-left: -100px;
+}
+
+.third-block {
+	width: 25%;
+	height: 320px;
+	background-image: url('images/ios.png');
+	background-size: 80%;
+	background-repeat: no-repeat;
+	z-index: 1;
+	order: 0;
+	margin-top: 60px;
+	margin-left: 5px;
+	margin-right: -10px;
+	position: relative;
+}
+
+.third-block:after {
+	content: "";
+	position: absolute;
+	width: 120px;
+	height: 80px;
+	right: 110px;
+	top: 260px;
+	background-image: url('images/Векторный-смарт-объект123123.png');
+	background-repeat: no-repeat;
+	background-size: 60%;
+}
+
+.pop-up {
+	position: absolute;
+	z-index: 99;
+	width: 75%;
+	height: 370px;
+	border: 1px solid #dadada;
+	left: 190px;
+	top: 394px;
+	background-color: white;
+	opacity: 0.95;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: space-between;
+	flex-wrap: wrap;
+	padding-top: 40px;
+}
+
+.pop-up img {
+	position: relative;
+	left: 270px;
+	top: -380px;
+}
+
+.pop-up input[type="text"] {
+	height: 45px;
+	width: 475px;
+	margin-left: 40px;
+	margin-top: 30px;
+	font-size: 20px;
+	font-family: 'Roboto';
+	color: black;
+	padding-left: 10px;
+	border: 1px solid black;
+}
+
+.pop-up input[type="text"]:last-of-type {
+	margin-top: -10px;
+}
+
+button {
+	width: 170px;
+	height: 42px;
+	align-self: flex-end;
+	margin-bottom: 25px;
+	margin-right: 40px;
+	background-color: #3b9dff;
+	border: none;
+	color: white;
+	font-size: 18px;
+	font-family: 'Roboto';
+	font-weight: bold;
+	padding-top: 5px;
+	cursor: pointer;
+}
+
+.break {
+	height: 80px;
+}
+
+.pop-up input[type="checkbox"] {
+	display: none;
+}
+
+.pop-up label {
+	align-self: flex-end;
+	margin-right: 110px;
+	margin-top: 5px;
+	font-size: 19px;
+	font-family: 'Roboto';
+}
+
+.pop-up label:before {
+	content: "";
+	width: 45px;
+	height: 45px;
+	border: 1px solid black;
+	position: absolute;
+	right: 40px;
+	top: 260px;
+	z-index: 999;
+	align-self: flex-end;
+	cursor: pointer;
+}
+
+.pop-up label:after {
+	content: "";
+	position: absolute;
+	right: 48px;
+	top: 274px;
+	width: 25px;
+	height: 12px;
+	border: 5px solid #3e9eff;
+	transform: rotate(-45deg);
+	border-radius: 0;
+	border-top: none;
+	border-right: none;
+	cursor: pointer;
+}
+
+.block-5 {
+	width: 100%;
+	height: 1200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: flex-start;
+	left: -10px;
+	top: 0px;
+	background-color: #f6f8fb;
+	position: relative;
+}
+
+.header-block-5 {
+	position: relative;
+	top: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.block-5 img {
+	align-self: center;
+	margin-top: -60px;
+	margin-left: -10px;
+	height: 20px;
+}
+
+.block-5 hr:nth-of-type(1) {
+	width: 110px;
+	height: 1px;
+	border: 1px solid #dcdcdc;
+	;
+	background-color: #dcdcdc;
+	position: relative;
+	top: -43px;
+	left: 70px;
+}
+
+.block-5 hr:nth-of-type(2) {
+	width: 110px;
+	height: 1px;
+	border: 1px solid #dcdcdc;
+	background-color: #dcdcdc;
+	position: relative;
+	top: -17px;
+	left: -80px;
+}
+
+.grid {
+	width: 100%;
+	height: 1050px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	position: relative;
+	top: 0px;
+}
+
+.first-grid,
+.second-grid,
+.third-grid {
+	width: 50%;
+	height: 250px;
+	align-self: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.first-grid-content1,
+.first-grid-content2,
+.first-grid-content3 {
+	border: 1px solid #d0d0d0;
+	width: 33%;
+	height: 250px;
+	display: inline-flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.first-grid-content1 p:first-child {
+	font-size: 22px;
+	font-family: "Roboto";
+	text-transform: uppercase;
+	text-align: right;
+	line-height: 1.2;
+	font-weight: 500;
+	margin-top: 5px;
+}
+
+.first-grid-content1 p:last-child {
+	font-size: 16px;
+	font-family: "Roboto";
+	text-align: center;
+	position: relative;
+}
+
+.first-grid-content1 p:last-child:before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-image: url(images/Векторный-смарт-объект1231.png);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	position: absolute;
+	left: 210px;
+}
+
+.first-grid-content1 {
+	border-left: none;
+	border-right: none;
+}
+
+.first-grid-content1 p {
+	padding-right: 10px;
+	position: relative;
+}
+
+.first-grid-content2 p {
+	font-size: 16px;
+	font-family: "Roboto";
+	text-align: left;
+	margin-top: 5px;
+	padding-left: 10px;
+}
+
+.first-grid-content3 img {
+	position: relative;
+	width: 95%;
+	height: 95%;
+	top: 66px;
+	left: 5px;
+}
+
+.first-grid-content3 {
+	border-right: none;
+	border-left: none;
+}
+
+.first-grid-content2:before {
+	content: "";
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	border: 1px solid #d0d0d0;
+	top: -32px;
+	left: -1px;
+	border-bottom: none;
+	border-top: none;
+}
+
+.first-grid-content2:after {
+	content: "";
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	border: 1px solid #d0d0d0;
+	top: 250px;
+	left: -1px;
+	border-bottom: none;
+	border-top: none;
+}
+
+.second-grid-content1,
+.second-grid-content2,
+.second-grid-content3 {
+	border: 1px solid #d0d0d0;
+	width: 33%;
+	height: 250px;
+	display: inline-flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.second-grid-content1 img {
+	position: relative;
+	width: 95%;
+	height: 95%;
+	top: 66px;
+	left: 5px;
+}
+
+.second-grid-content1 {
+	border-right: none;
+	border-left: none;
+}
+
+.second-grid-content2 p {
+	font-size: 16px;
+	font-family: "Roboto";
+	text-align: left;
+	margin-top: 5px;
+	padding-left: 10px;
+}
+
+.second-grid-content3 p:first-child {
+	font-size: 22px;
+	font-family: "Roboto";
+	text-transform: uppercase;
+	text-align: left;
+	line-height: 1.2;
+	font-weight: 500;
+	margin-top: 5px;
+}
+
+.second-grid-content3 p:last-child {
+	font-size: 16px;
+	font-family: "Roboto";
+	text-align: center;
+	position: relative;
+}
+
+.second-grid-content3 p:last-child:before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-image: url(images/Векторный-смарт-объект1231.png);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	position: absolute;
+	left: 15px;
+}
+
+.second-grid-content3 {
+	border-left: none;
+	border-right: none;
+}
+
+.second-grid-content3 p {
+	padding-left: 10px;
+	position: relative;
+}
+
+.second-grid-content2:before {
+	content: "";
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	border: 1px solid #d0d0d0;
+	top: -32px;
+	left: -1px;
+	border-bottom: none;
+	border-top: none;
+}
+
+.second-grid-content2:after {
+	content: "";
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	border: 1px solid #d0d0d0;
+	top: 250px;
+	left: -1px;
+	border-bottom: none;
+	border-top: none;
+}
+
+.third-grid-content1,
+.third-grid-content2,
+.third-grid-content3 {
+	border: 1px solid #d0d0d0;
+	width: 33%;
+	height: 250px;
+	display: inline-flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.third-grid-content1 p:first-child {
+	font-size: 22px;
+	font-family: "Roboto";
+	text-transform: uppercase;
+	text-align: right;
+	line-height: 1.2;
+	font-weight: 500;
+	margin-top: 5px;
+}
+
+.third-grid-content1 p:last-child {
+	font-size: 16px;
+	font-family: "Roboto";
+	text-align: center;
+	position: relative;
+}
+
+.third-grid-content1 p:last-child:before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-image: url(images/Векторный-смарт-объект1231.png);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	position: absolute;
+	left: 210px;
+}
+
+.third-grid-content1 {
+	border-left: none;
+	border-right: none;
+}
+
+.third-grid-content1 p {
+	padding-right: 10px;
+	position: relative;
+}
+
+.third-grid-content2 p {
+	font-size: 16px;
+	font-family: "Roboto";
+	text-align: left;
+	margin-top: 5px;
+	padding-left: 10px;
+}
+
+.third-grid-content3 img {
+	position: relative;
+	width: 95%;
+	height: 95%;
+	top: 66px;
+	left: 5px;
+}
+
+.third-grid-content3 {
+	border-right: none;
+	border-left: none;
+}
+
+.third-grid-content2:before {
+	content: "";
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	border: 1px solid #d0d0d0;
+	top: -32px;
+	left: -1px;
+	border-bottom: none;
+	border-top: none;
+}
+
+.third-grid-content2:after {
+	content: "";
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	border: 1px solid #d0d0d0;
+	top: 250px;
+	left: -1px;
+	border-bottom: none;
+	border-top: none;
+}
+
+.block-6 {
+	width: 100%;
+	height: 950px;
+	background-image: url(images/Слой-108.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	top: 0px;
+	margin-left: -10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.block-6-header1,
+.block-6-header2 {
+	position: relative;
+	top: -50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.block-6-header1 img,
+.block-6-header2 img {
+	align-self: center;
+	margin-top: -60px;
+	margin-left: -10px;
+	height: 20px;
+}
+
+.block-6-header1 hr:nth-of-type(1),
+.block-6-header2 hr:nth-of-type(1) {
+	width: 110px;
+	height: 2px;
+	border: none;
+	background-color: #dcdcdc;
+	position: relative;
+	top: -43px;
+	left: 70px;
+}
+
+.block-6-header1 hr:nth-of-type(2),
+.block-6-header2 hr:nth-of-type(2) {
+	width: 110px;
+	height: 2px;
+	border: none;
+	background-color: #dcdcdc;
+	position: relative;
+	top: -17px;
+	left: -80px;
+}
+
+.fourth-text-block {
+	width: 50%;
+	height: 190px;
+	background-color: #3e9eff;
+	align-self: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	position: relative;
+	top: -50px;
+	display: inline-flex;
+	flex-direction: column;
+	padding-bottom: 20px;
+}
+
+.fourth-text-block p {
+	font-size: 22px;
+	font-family: "Roboto";
+	font-weight: normal;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+}
+
+.fourth-text-block hr:first-of-type {
+	border: 1px solid white;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	width: 690px;
+	height: 1px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.block-6-header2 {
+	top: -50px;
+}
+
+.block-6-form {
+	width: 50%;
+	height: 300px;
+	align-self: center;
+	position: relative;
+	top: -40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.block-6-form input[type="text"] {
+	width: 46%;
+	height: 45px;
+	font-size: 20px;
+	font-family: 'Roboto';
+	padding-left: 10px;
+	border: 1px solid black;
+	color: black;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.block-6-form input[type="text"]:nth-of-type(3) {
+	width: 100%;
+	height: 45px;
+	margin-top: 20px;
+	padding-bottom: 145px;
+}
+
+.block-6-form button {
+	position: relative;
+	left: 580px;
+	top: 20px;
+}
+
+.block-7 {
+	width: 100%;
+	height: 1200px;
+	background-image: url(images/Слой-122.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	top: 0px;
+	margin-left: -10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.block-7-header1,
+.block-7-header2 {
+	position: relative;
+	top: -70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.block-7-header1 img,
+.block-7-header2 img {
+	align-self: center;
+	margin-top: -60px;
+	margin-left: -10px;
+	height: 20px;
+}
+
+.block-7-header1 hr:nth-of-type(1),
+.block-7-header2 hr:nth-of-type(1) {
+	width: 110px;
+	height: 2px;
+	border: none;
+	background-color: #d6cfd1;
+	position: relative;
+	top: -43px;
+	left: 70px;
+}
+
+.block-7-header1 hr:nth-of-type(2),
+.block-7-header2 hr:nth-of-type(2) {
+	width: 110px;
+	height: 2px;
+	background-color: #d6cfd1;
+	border: none;
+	position: relative;
+	top: -17px;
+	left: -80px;
+}
+
+.fifth-text-block {
+	position: relative;
+	top: -50px;
+	height: 170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-self: center;
+}
+
+h3 {
+	font-family: "Roboto";
+	font-size: 18px;
+	align-self: center;
+}
+
+.fifth-text-block p,
+.fifth-text-block p {
+	font-family: "Roboto";
+	font-size: 18px;
+	font-weight: 100;
+	align-self: center;
+	margin-top: -10px;
+}
+
+.fifth-text-block p:nth-of-type(2) {
+	margin-top: -30px;
+}
+
+.block-7-hidden {
+	display: none;
+}
+
+.block-7-form {
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30%;
+	height: 500px;
+	position: relative;
+	top: -20px;
+	left: -125px;
+}
+
+.block-7-form input[type="text"] {
+	width: 97%;
+	height: 45px;
+	font-size: 20px;
+	font-family: 'Roboto';
+	padding-left: 10px;
+	border: 1px solid black;
+	color: black;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.block-7-form input[type="checkbox"] {
+	display: none;
+}
+
+.block-7-form label {
+	align-self: flex-end;
+	margin-right: 60px;
+	margin-top: 5px;
+	font-size: 19px;
+	font-family: 'Roboto';
+}
+
+.block-7-form label:before {
+	content: "";
+	width: 30px;
+	height: 30px;
+	border: 1px solid black;
+	position: absolute;
+	right: 20px;
+	top: 376px;
+	z-index: 999;
+	align-self: flex-end;
+	cursor: pointer;
+	background-color: white;
+}
+
+.block-7-form label:after {
+	content: "";
+	position: absolute;
+	right: 25px;
+	top: 382px;
+	width: 20px;
+	height: 10px;
+	border: 3px solid #3e9eff;
+	transform: rotate(-45deg);
+	border-radius: 0;
+	border-top: none;
+	border-right: none;
+	cursor: pointer;
+	z-index: 99999;
+}
+
+.block-7-form button {
+	position: relative;
+	left: 40px;
+}
+
+.block-7-content {
+	align-self: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 80%;
+	height: 450px;
+	position: relative;
+	left: -100px;
+}
+
+.map img {
+	width: 80%;
+	position: relative;
+	left: 120px;
+	top: -30px;
+}
+
+.map p:after {
+	content: "";
+	position: absolute;
+	background-image: url("images/Слой-113.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 40px;
+	height: 50px;
+	left: 310px;
+	top: 2px;
+}
+
+.map p:before {
+	content: "LOREM IPSUM";
+	font-size: 25px;
+	font-family: 'Roboto';
+	font-weight: bold;
+	position: absolute;
+	top: 45px;
+	left: 312px;
+}
+
+.social-links {
+	align-self: center;
+	width: 14%;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+	top: 45px;
+}
+
+.social-links a {
+	display: block;
+	width: 15%;
+	height: 60%;
+}
+
+.social-links a:nth-child(1) {
+	background-color: #507cbe;
+	background-image: url("images/facebook.png");
+	background-repeat: no-repeat;
+	background-size: 30%;
+	background-position: 50% 50%;
+}
+
+.social-links a:nth-child(2) {
+	background-color: #63cdf1;
+	background-image: url("images/twitter.png");
+}
+
+.social-links a:nth-child(3) {
+	background-color: #00a2ff;
+	background-image: url("images/google_plus.png");
+}
+
+.social-links a:nth-child(4) {
+	background-color: #90cadd;
+	background-image: url("images/in.png");
+}
+
+.social-links a:nth-child(5) {
+	background-color: #e093b7;
+	background-image: url("images/x.png");
+}
+
+.social-links a:nth-child(2),
+.social-links a:nth-child(3),
+.social-links a:nth-child(4),
+.social-links a:nth-child(5) {
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position: 50% 50%;
+}
+
+.social-links a:hover {
+	transform: scale(1.1);
+	opacity: 0.6;
+}
+
+.footer {
+	width: 100%;
+	height: 80px;
+	background-color: #363636;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: relative;
+	top: 0px;
+	left: -10px;
+}
+
+.footer p {
+	align-self: center;
+	font-size: 15px;
+	font-family: 'Roboto';
+	font-weight: 200;
+	text-transform: uppercase;
+	color: white;
+}
+
+.footer p a {
+	color: #2951a0;
+	text-transform: none;
+}
+
+@media screen and (max-width: 340px) {
+	.body {
+		width: 100%;
+		overflow-x: hidden;
+	}
+	.top {
+		height: 300px;
+		width: 100%;
+		z-index: 2;
+		background-color: black;
+		opacity: .7;
+	}
+	.header-container {
+		width: 100%;
+		height: 80px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.header-container ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		left: 20px;
+		top: -105px;
+		width: 90%;
+		height: 250px;
+	}
+	.header-container li {
+		position: relative;
+		left: -40px;
+		width: 100%;
+		padding-right: -10px;
+		font-weight: bold;
+		font-family: "Roboto";
+	}
+	li:first-child {
+		padding-left: 15px;
+	}
+	.header-container li:nth-of-type(1),
+	.header-container li:nth-of-type(2),
+	.header-container li:nth-of-type(3),
+	.header-container li:nth-of-type(4),
+	.header-container li:nth-of-type(5),
+	.header-container li:nth-of-type(6),
+	.header-container li:nth-of-type(7) {
+		content: "";
+		width: 100%;
+		height: 30px;
+		border: 1px solid #296db9;
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		padding-left: -10px;
+		padding-top: 10px;
+	}
+	.header-container li:nth-of-type(7) {
+		border: none;
+	}
+	.header-container img {
+		width: 30%;
+		height: 35%;
+		position: relative;
+		top: -95px;
+		left: 30px;
+	}
+	nav li:nth-of-type(2):before,
+	nav li:nth-of-type(3):before,
+	nav li:nth-of-type(4):before,
+	nav li:nth-of-type(5):before,
+	nav li:nth-of-type(6):before,
+	nav li:nth-of-type(7):before {
+		content: "";
+		width: 100px;
+		height: 30px;
+		border: none;
+		border-right: none;
+		border-top: none;
+		border-bottom: none;
+	}
+	.c-hamburger {
+		display: block;
+		top: -130px;
+		left: -10px;
+	}
+	.block-1 {
+		width: 100%;
+		height: 350px;
+		position: relative;
+		top: -470px;
+		left: 0;
+		z-index: 1;
+	}
+	.first-text-block {
+		top: 100px;
+		width: 90%;
+		height: 100px;
+	}
+	.first-text-block p {
+		font-size: 12px;
+		top: 0px;
+	}
+	.first-text-block h1 {
+		font-size: 16px;
+		top: 0px;
+	}
+	.pulse {
+		display: none;
+	}
+	.block-2 {
+		top: -500px;
+		width: 80%;
+		align-self: center;
+	}
+	h2 {
+		font-size: 38px;
+	}
+	.second-text-block {
+		position: relative;
+		width: 120%;
+		top: -22px;
+		height: 200px;
+	}
+	.second-text-block p {
+		font-size: 16px;
+	}
+	.second-text-block p:last-child:after {
+		content: " LOREM IPSUM HAS BEEN THE INDUSTRY'S STANDART DUMMY";
+		font-size: 16px;
+		font-family: "Roboto";
+		font-weight: normal;
+		text-align: center;
+		text-transform: uppercase;
+		color: white;
+		vertical-align: middle;
+		padding-bottom: 10px;
+	}
+	.second-text-block p:last-child {
+		padding-bottom: 10px;
+	}
+	.tablets,
+	.pazzles,
+	.devices {
+		flex-direction: column;
+	}
+	.tablets img {
+		width: 170%;
+		height: 100px;
+		position: relative;
+		top: -80px;
+	}
+	.tablets p:nth-of-type(1),
+	.pazzles p:nth-of-type(2),
+	.devices p:nth-of-type(1) {
+		display: none;
+	}
+	.hidden {
+		display: inline-block;
+		position: relative;
+		text-align: center;
+		font-size: 20px;
+		font-family: "Roboto";
+	}
+	.tablets .hidden {
+		left: -115px;
+		top: -80px;
+		font-weight: 500;
+	}
+	.block-2 hr:nth-of-type(3) {
+		top: -100px;
+		position: relative;
+		width: 100%;
+		left: 10px;
+	}
+	.pazzles img {
+		width: 170%;
+		height: 100px;
+		position: relative;
+		top: -250px;
+		height: 180px;
+		align-self: center;
+	}
+	.pazzles .hidden {
+		left: -90px;
+		top: 0px;
+		font-weight: 500;
+	}
+	.block-2 hr:nth-of-type(4) {
+		top: -130px;
+		position: relative;
+		width: 100%;
+		left: 10px;
+	}
+	.devices img {
+		width: 170%;
+		height: 100px;
+		position: relative;
+		top: -100px;
+		height: 180px;
+		align-self: center;
+	}
+	.devices .hidden {
+		left: -170px;
+		top: -80px;
+		font-weight: 500;
+	}
+	.block-3 {
+		top: -600px;
+		height: 900px;
+	}
+	.third-text-block {
+		position: relative;
+		width: 95%;
+		top: -10px;
+		height: 140px;
+	}
+	.third-text-block p {
+		font-size: 16px;
+	}
+	.third-text-block p:after {
+		content: " LOREM IPSUM HAS BEEN THE INDUSTRY'S STANDART DUMMY";
+		font-size: 16px;
+		font-family: "Roboto";
+		font-weight: normal;
+		text-align: center;
+		text-transform: uppercase;
+		color: white;
+		vertical-align: middle;
+		padding-bottom: 10px;
+	}
+	.scheme {
+		display: none;
+	}
+	.mobile-scheme {
+		display: flex;
+		flex-direction: row;
+		justify-content: stretch;
+		flex-wrap: wrap;
+		width: 95%;
+		height: 450px;
+		position: relative;
+		left: 10px;
+		top: -40px;
+	}
+	.m1-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100%;
+		height: 150px;
+	}
+	.m2-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100%;
+		height: 150px;
+	}
+	.m3-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100%;
+		height: 150px;
+	}
+	.m-romb-1 {
+		width: 100px;
+		height: 100px;
+		transform: rotate(45deg);
+		background-color: #e2e4e7;
+		z-index: 0;
+		position: relative;
+		align-self: center;
+	}
+	.m-romb-1:before {
+		content: "";
+		background-image: url('images/Векторный-смарт-объект.png');
+		background-repeat: no-repeat;
+		background-position: 50% 40%;
+		transform: rotate(-45deg);
+		background-size: 40%;
+		width: 100px;
+		height: 100px;
+		z-index: 1;
+		position: absolute;
+	}
+	.m-romb-2 {
+		width: 100px;
+		height: 100px;
+		transform: rotate(45deg);
+		background-color: #e2e4e7;
+		z-index: 0;
+		position: relative;
+		align-self: center;
+	}
+	.m-romb-2:before {
+		content: "";
+		background-image: url('images/Векторный-смарт-объект1.png');
+		background-repeat: no-repeat;
+		background-position: 50% 40%;
+		transform: rotate(-45deg);
+		background-size: 40%;
+		width: 100px;
+		height: 100px;
+		z-index: 1;
+		position: absolute;
+	}
+	.m-romb-3 {
+		width: 100px;
+		height: 100px;
+		transform: rotate(45deg);
+		background-color: #e2e4e7;
+		z-index: 0;
+		position: relative;
+		align-self: center;
+	}
+	.m-romb-3:before {
+		content: "";
+		background-image: url('images/Векторный-смарт-объект-копія.png');
+		background-repeat: no-repeat;
+		background-position: 50% 40%;
+		transform: rotate(-45deg);
+		background-size: 40%;
+		width: 100px;
+		height: 100px;
+		z-index: 1;
+		position: absolute;
+		filter: invert(80%);
+	}
+	.m-romb-4 {
+		width: 100px;
+		height: 100px;
+		transform: rotate(45deg);
+		background-color: #e2e4e7;
+		z-index: 0;
+		position: relative;
+		align-self: center;
+	}
+	.m-romb-4:before {
+		content: "";
+		background-image: url('images/Векторный-смарт-объект3.png');
+		background-repeat: no-repeat;
+		background-position: 50% 40%;
+		transform: rotate(-45deg);
+		background-size: 40%;
+		width: 100px;
+		height: 100px;
+		z-index: 1;
+		position: absolute;
+	}
+	.m-romb-5 {
+		width: 100px;
+		height: 100px;
+		transform: rotate(45deg);
+		background-color: #e2e4e7;
+		z-index: 0;
+		position: relative;
+		align-self: center;
+	}
+	.m-romb-5:before {
+		content: "";
+		background-image: url('images/Векторный-смарт-объект2.png');
+		background-repeat: no-repeat;
+		background-position: 50% 40%;
+		transform: rotate(-45deg);
+		background-size: 40%;
+		width: 100px;
+		height: 100px;
+		z-index: 1;
+		position: absolute;
+	}
+	.m-romb-6 {
+		width: 100px;
+		height: 100px;
+		transform: rotate(45deg);
+		background-color: #e2e4e7;
+		position: relative;
+		align-self: center;
+	}
+	.m-romb-6:before {
+		content: "";
+		background-image: url('images/Векторный-смарт-объект4.png');
+		background-repeat: no-repeat;
+		background-position: 50% 40%;
+		transform: rotate(-45deg);
+		background-size: 40%;
+		width: 100px;
+		height: 100px;
+		z-index: 1;
+		position: absolute;
+	}
+	.m-romb-1:after,
+	.m-romb-2:after,
+	.m-romb-3:after,
+	.m-romb-4:after,
+	.m-romb-5:after,
+	.m-romb-6:after {
+		content: "LOREM";
+		font-size: ;
+		text-align: center;
+		width: 100px;
+		height: 20px;
+		padding-bottom: 2px;
+		position: absolute;
+		transform: rotate(-45deg);
+		background-color: #f6f8fb;
+		font-size: 20px;
+		font-family: "Roboto";
+		font-weight: 300;
+		left: 25px;
+		top: 65px;
+	}
+	.block-3 hr:nth-of-type(3) {
+		position: absolute;
+		width: 70%;
+		z-index: 99999;
+		top: 850px;
+		left: 50px;
+		border: 2px solid #a6a6a6;
+		border-right: none;
+		border-left: none;
+		border-bottom: none;
+	}
+	.circle a {
+		display: none;
+	}
+	.block-3 span {
+		position: relative;
+		width: 20px;
+		height: 20px;
+		display: block;
+		border: 2px solid #3e9eff;
+		left: 150px;
+		transform: rotate(45deg);
+		border-bottom: none;
+		border-right: none;
+	}
+	.block-4 {
+		display: none;
+	}
+	.block-5 {
+		display: none;
+	}
+	.block-6 {
+		display: none;
+	}
+	.block-7 {
+		position: relative;
+		top: -600px;
+		width: 100%;
+		height: 1300px;
+		background-image: url(images/Слой-122.png);
+		background-position: 20% 10%;
+		background-size: 1700px;
+	}
+	.block-7-header1 {
+		top: -150px;
+	}
+	.fifth-text-block {
+		top: -120px;
+		width: 95%;
+		align-self: center;
+		padding-left: 10px;
+	}
+	.fifth-text-block p:nth-of-type(1),
+	.fifth-text-block p:nth-of-type(3) {
+		display: none;
+	}
+	.block-7-hidden {
+		display: inline-block;
+		width: 90%;
+		text-align: center;
+		position: relative;
+		top: 20px;
+		font-weight: 400;
+	}
+	.block-7-header2 {
+		top: 0px;
+	}
+	.map img {
+		left: 90px;
+		top: -250px;
+		position: relative;
+		width: 250px;
+		height: 150px;
+	}
+	.map p:after {
+		content: "";
+		position: absolute;
+		background-image: url("images/Слой-113.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 40px;
+		height: 50px;
+		left: 180px;
+		top: -260px;
+	}
+	.map p:before {
+		content: "LOREM";
+		font-size: 25px;
+		font-family: 'Roboto';
+		font-weight: bold;
+		position: absolute;
+		top: -220px;
+		left: 180px;
+	}
+	.block-7-form {
+		top: 20px;
+		width: 110%;
+		left: -135px;
+	}
+	.block-7-form input[type="text"] {
+		width: 100%;
+		align-self: center;
+		margin-bottom: 20px;
+	}
+	.block-7-form input[type="checkbox"] {}
+	.block-7-form label:before {
+		content: "";
+		width: 50px;
+		height: 50px;
+		border: 1px solid black;
+		position: absolute;
+		right: 90px;
+		top: -80px;
+		z-index: 999;
+		align-self: center;
+		cursor: pointer;
+		background-color: white;
+	}
+	.block-7-form label:after {
+		content: "";
+		position: absolute;
+		background-image: url('images/Фигура-32.png');
+		background-repeat: no-repeat;
+		width: 20px;
+		height: 20px;
+		left: 50px;
+		top: -70px;
+		z-index: 99999;
+	}
+	.block-7-form label {
+		position: relative;
+		top: 100px;
+		font-size: 19px;
+		font-family: 'Roboto';
+		left: 40px;
+	}
+	.block-7-form button {
+		position: relative;
+		top: 100px;
+		left: 15px;
+		width: 200px;
+	}
+	.social-links {
+		top: 150px;
+		width: 80%;
+	}
+	.footer {
+		top: -600px;
+		width: 100%;
+		position: relative;
+	}
+	.footer p {
+		font-size: 12px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
